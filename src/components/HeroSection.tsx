@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Brain, Users, Target, Sparkles } from 'lucide-react';
+import { ArrowRight, Brain, Users, Target, Sparkles, Gamepad2 } from 'lucide-react';
 interface HeroSectionProps {
   onStartQuiz: () => void;
 }
@@ -76,7 +76,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
           
           <div className="card-glass hover-lift group">
-            <Brain className="w-8 h-8 text-accent mb-3 mx-auto group-hover:scale-110 transition-transform" />
+            <Gamepad2 className="w-8 h-8 text-accent mb-3 mx-auto group-hover:scale-110 transition-transform" />
             <h3 className="font-semibold mb-2">Gamificação</h3>
             <p className="text-sm text-muted-foreground">
               Sistema de pontuação que torna o aprendizado envolvente
