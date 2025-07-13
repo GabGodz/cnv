@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Target, Brain, Loader2 } from 'lucide-react';
+import { ArrowRight, Target, Brain, Loader2, MessageSquareMore } from 'lucide-react';
 import { UserProfile, GameState } from '../QuizContainer';
 import { initializeGemini, generateScenarios, generateFeedback } from '@/services/geminiService';
 import { useToast } from '@/hooks/use-toast';
@@ -292,7 +292,7 @@ const GameMode: React.FC<GameModeProps> = ({ userProfile, apiKey, onComplete }) 
           /* Feedback */
           <div className="card-glass bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
             <div className="flex items-start gap-4">
-              <Brain className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+              <MessageSquareMore className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
               <div className="flex-1">
                 <h4 className="font-semibold mb-2 text-accent">Feedback Imediato:</h4>
                 <p className="text-base leading-relaxed mb-4">{feedback}</p>
